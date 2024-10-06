@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Youth Mental Health Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .topic {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Youth Mental Health Quiz</h1>
+    <p>Click on each topic to learn more about it. The answers will alternate between fiction and fact.</p>
+
+    <div class="topic" onclick="toggleAnswer(this)">
+        <strong>Self-harm is a mental illness.</strong>
+        <div class="answer">
+            <p><strong>Fiction:</strong> It is actually a behavior and is often a symptom of a mental illness, such as depression, psychosis, or borderline personality disorder. It can become addictive.</p>
+        </div>
+    </div>
+
+    <div class="topic" onclick="toggleAnswer(this)">
+        <strong>Self-harm is more than just cutting, burning, and things we can see.</strong>
+        <div class="answer">
+            <p><strong>Fact:</strong> Excessive exercise, pinching oneself, increased drinking, overdose with non-fatal intention, sabotaging food relationships, staying with people who treat you terribly, pulling hair, and mixing meds with alcohol can all be forms of self-injury.</p>
+        </div>
+    </div>
+
+    <div class="topic" onclick="toggleAnswer(this)">
+        <strong>Self-harm is a failed suicide attempt.</strong>
+        <div class="answer">
+            <p><strong>Fiction:</strong> Intention is to harm self, not kill self.</p>
+        </div>
+    </div>
+
+    <div class="topic" onclick="toggleAnswer(this)">
+        <strong>Self-harm can be a good thing.</strong>
+        <div class="answer">
+            <p><strong>Fact:</strong> It may stop suicide; perhaps sacrificing part of the body to save the whole. Self-harmers often say there is a build-up of pressure—harming can be like opening the lid of a boiling pot to give some release. So, it can temporarily be a relief until new coping strategies are learned, and/or an underlying mental health problem is treated.</p>
+        </div>
+    </div>
+
+    <div class="topic" onclick="toggleAnswer(this)">
+        <strong>If you ask a young person about their suicidal intentions, you will encourage them to kill themselves.</strong>
+        <div class="answer">
+            <p><strong>Fiction:</strong> The opposite is true. Asking someone directly about their suicidal feelings will often lower their anxiety level and act as a deterrent. Your openness and concern in asking about suicide will allow the person experiencing pain to talk about their problems. This may allow the person with suicidal thoughts to feel less lonely or isolated, and perhaps a bit relieved.</p>
+        </div>
+    </div>
+
+    <div class="topic" onclick="toggleAnswer(this)">
+        <strong>Suicide is the third leading cause of deaths for young people.</strong>
+        <div class="answer">
+            <p><strong>Fact:</strong> In the United States in 2008, an average of one young person (age 15-24) dies of suicide every 2 hours and 3 minutes.</p>
+        </div>
+    </div>
+
+    <div class="topic" onclick="toggleAnswer(this)">
+        <strong>A young person who attempts suicide will always be "suicidal."</strong>
+        <div class="answer">
+            <p><strong>Fiction:</strong> Most people who are at risk feel suicidal for only a brief period in their lives. With proper assistance and support, they will probably never be suicidal again.</p>
+        </div>
+    </div>
+
+    <div class="topic" onclick="toggleAnswer(this)">
+        <strong>The role of family members or other caregivers cannot be overstated when helping a young person in a suicidal crisis.</strong>
+        <div class="answer">
+            <p><strong>Fact:</strong> For the young person, family may mean biological or legal parents, siblings, other relatives, foster parents, legal guardians, caregivers, or other individuals with primary relationships to the child, whether they be blood, adoptive, legal, or social relationships. Family notification is a vital part of suicide prevention for young people.</p>
+        </div>
+    </div>
+
+    <div class="topic" onclick="toggleAnswer(this)">
+        <strong>Suicide happens without warning.</strong>
+        <div class="answer">
+            <p><strong>Fiction:</strong> Studies reveal that a person who is suicidal generally gives many clues and warnings regarding their suicidal intentions. Alertness to these cries for help may prevent suicidal behavior.</p>
+        </div>
+    </div>
+
+    <div class="topic" onclick="toggleAnswer(this)">
+        <strong>Suicide occurs across all classes of young people.</strong>
+        <div class="answer">
+            <p><strong>Fact:</strong> Suicide is neither a rich man’s disease nor the poor man’s curse. Showing no class prejudice, suicide is represented throughout society.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(element) {
+            const answer = element.querySelector('.answer');
+            if (answer.style.display === "none" || answer.style.display === "") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

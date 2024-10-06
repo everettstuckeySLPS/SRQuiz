@@ -17,95 +17,169 @@
             margin-bottom: 10px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
         }
         .answer {
             display: none;
+            margin-top: 10px;
+        }
+        .options {
             margin-top: 10px;
         }
     </style>
 </head>
 <body>
     <h1>Interactive Youth Mental Health Quiz</h1>
-    <p>Click on each topic to learn more about it. The answers will alternate between fiction and fact.</p>
+    <p>Enter your thoughts on whether each of the statements below is fact or fiction</p>
 
-    <div class="topic" onclick="toggleAnswer(this)">
+    <div class="topic">
         <strong>Self-harm is a mental illness.</strong>
+        <div class="options">
+            <input type="radio" id="fact1" name="question1" value="fact">
+            <label for="fact1">Fact</label><br>
+            <input type="radio" id="fiction1" name="question1" value="fiction">
+            <label for="fiction1">Fiction</label><br>
+            <button onclick="revealAnswer(this)">Submit</button>
+        </div>
         <div class="answer">
             <p><strong>Fiction:</strong> It is actually a behavior and is often a symptom of a mental illness, such as depression, psychosis, or borderline personality disorder. It can become addictive.</p>
         </div>
     </div>
 
-    <div class="topic" onclick="toggleAnswer(this)">
+    <div class="topic">
         <strong>Self-harm is more than just cutting, burning, and things we can see.</strong>
+        <div class="options">
+            <input type="radio" id="fact2" name="question2" value="fact">
+            <label for="fact2">Fact</label><br>
+            <input type="radio" id="fiction2" name="question2" value="fiction">
+            <label for="fiction2">Fiction</label><br>
+            <button onclick="revealAnswer(this)">Submit</button>
+        </div>
         <div class="answer">
             <p><strong>Fact:</strong> Excessive exercise, pinching oneself, increased drinking, overdose with non-fatal intention, sabotaging food relationships, staying with people who treat you terribly, pulling hair, and mixing meds with alcohol can all be forms of self-injury.</p>
         </div>
     </div>
 
-    <div class="topic" onclick="toggleAnswer(this)">
+    <div class="topic">
         <strong>Self-harm is a failed suicide attempt.</strong>
+        <div class="options">
+            <input type="radio" id="fact3" name="question3" value="fact">
+            <label for="fact3">Fact</label><br>
+            <input type="radio" id="fiction3" name="question3" value="fiction">
+            <label for="fiction3">Fiction</label><br>
+            <button onclick="revealAnswer(this)">Submit</button>
+        </div>
         <div class="answer">
             <p><strong>Fiction:</strong> Intention is to harm self, not kill self.</p>
         </div>
     </div>
 
-    <div class="topic" onclick="toggleAnswer(this)">
+    <div class="topic">
         <strong>Self-harm can be a good thing.</strong>
+        <div class="options">
+            <input type="radio" id="fact4" name="question4" value="fact">
+            <label for="fact4">Fact</label><br>
+            <input type="radio" id="fiction4" name="question4" value="fiction">
+            <label for="fiction4">Fiction</label><br>
+            <button onclick="revealAnswer(this)">Submit</button>
+        </div>
         <div class="answer">
             <p><strong>Fact:</strong> It may stop suicide; perhaps sacrificing part of the body to save the whole. Self-harmers often say there is a build-up of pressure—harming can be like opening the lid of a boiling pot to give some release. So, it can temporarily be a relief until new coping strategies are learned, and/or an underlying mental health problem is treated.</p>
         </div>
     </div>
 
-    <div class="topic" onclick="toggleAnswer(this)">
+    <div class="topic">
         <strong>If you ask a young person about their suicidal intentions, you will encourage them to kill themselves.</strong>
+        <div class="options">
+            <input type="radio" id="fact5" name="question5" value="fact">
+            <label for="fact5">Fact</label><br>
+            <input type="radio" id="fiction5" name="question5" value="fiction">
+            <label for="fiction5">Fiction</label><br>
+            <button onclick="revealAnswer(this)">Submit</button>
+        </div>
         <div class="answer">
             <p><strong>Fiction:</strong> The opposite is true. Asking someone directly about their suicidal feelings will often lower their anxiety level and act as a deterrent. Your openness and concern in asking about suicide will allow the person experiencing pain to talk about their problems. This may allow the person with suicidal thoughts to feel less lonely or isolated, and perhaps a bit relieved.</p>
         </div>
     </div>
 
-    <div class="topic" onclick="toggleAnswer(this)">
+    <div class="topic">
         <strong>Suicide is the third leading cause of deaths for young people.</strong>
+        <div class="options">
+            <input type="radio" id="fact6" name="question6" value="fact">
+            <label for="fact6">Fact</label><br>
+            <input type="radio" id="fiction6" name="question6" value="fiction">
+            <label for="fiction6">Fiction</label><br>
+            <button onclick="revealAnswer(this)">Submit</button>
+        </div>
         <div class="answer">
             <p><strong>Fact:</strong> In the United States in 2008, an average of one young person (age 15-24) dies of suicide every 2 hours and 3 minutes.</p>
         </div>
     </div>
 
-    <div class="topic" onclick="toggleAnswer(this)">
+    <div class="topic">
         <strong>A young person who attempts suicide will always be "suicidal."</strong>
+        <div class="options">
+            <input type="radio" id="fact7" name="question7" value="fact">
+            <label for="fact7">Fact</label><br>
+            <input type="radio" id="fiction7" name="question7" value="fiction">
+            <label for="fiction7">Fiction</label><br>
+            <button onclick="revealAnswer(this)">Submit</button>
+        </div>
         <div class="answer">
             <p><strong>Fiction:</strong> Most people who are at risk feel suicidal for only a brief period in their lives. With proper assistance and support, they will probably never be suicidal again.</p>
         </div>
     </div>
 
-    <div class="topic" onclick="toggleAnswer(this)">
+    <div class="topic">
         <strong>The role of family members or other caregivers cannot be overstated when helping a young person in a suicidal crisis.</strong>
+        <div class="options">
+            <input type="radio" id="fact8" name="question8" value="fact">
+            <label for="fact8">Fact</label><br>
+            <input type="radio" id="fiction8" name="question8" value="fiction">
+            <label for="fiction8">Fiction</label><br>
+            <button onclick="revealAnswer(this)">Submit</button>
+        </div>
         <div class="answer">
             <p><strong>Fact:</strong> For the young person, family may mean biological or legal parents, siblings, other relatives, foster parents, legal guardians, caregivers, or other individuals with primary relationships to the child, whether they be blood, adoptive, legal, or social relationships. Family notification is a vital part of suicide prevention for young people.</p>
         </div>
     </div>
 
-    <div class="topic" onclick="toggleAnswer(this)">
+    <div class="topic">
         <strong>Suicide happens without warning.</strong>
+        <div class="options">
+            <input type="radio" id="fact9" name="question9" value="fact">
+            <label for="fact9">Fact</label><br>
+            <input type="radio" id="fiction9" name="question9" value="fiction">
+            <label for="fiction9">Fiction</label><br>
+            <button onclick="revealAnswer(this)">Submit</button>
+        </div>
         <div class="answer">
             <p><strong>Fiction:</strong> Studies reveal that a person who is suicidal generally gives many clues and warnings regarding their suicidal intentions. Alertness to these cries for help may prevent suicidal behavior.</p>
         </div>
     </div>
 
-    <div class="topic" onclick="toggleAnswer(this)">
+    <div class="topic">
         <strong>Suicide occurs across all classes of young people.</strong>
+        <div class="options">
+            <input type="radio" id="fact10" name="question10" value="fact">
+            <label for="fact10">Fact</label><br>
+            <input type="radio" id="fiction10" name="question10" value="fiction">
+            <label for="fiction10">Fiction</label><br>
+            <button onclick="revealAnswer(this)">Submit</button>
+        </div>
         <div class="answer">
             <p><strong>Fact:</strong> Suicide is neither a rich man’s disease nor the poor man’s curse. Showing no class prejudice, suicide is represented throughout society.</p>
         </div>
     </div>
 
     <script>
-        function toggleAnswer(element) {
-            const answer = element.querySelector('.answer');
-            if (answer.style.display === "none" || answer.style.display === "") {
+        function revealAnswer(button) {
+            const options = button.parentElement;
+            const selectedOption = options.querySelector('input[type="radio"]:checked');
+            if (selectedOption) {
+                const answer = options.nextElementSibling;
                 answer.style.display = "block";
             } else {
-                answer.style.display = "none";
+                alert("Please select an answer before submitting.");
             }
         }
     </script>
